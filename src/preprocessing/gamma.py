@@ -146,8 +146,8 @@ def process_image(file_path: str, processed_dir: str):
         ax.set_title(title)
         ax.axis("off")
     plt.tight_layout()
-    # plt.savefig(os.path.join(processed_dir, 'gamma_comparison.png'), dpi=150)
-    # print("Saved comparison to gamma_comparison.png")
+    plt.savefig(os.path.join(processed_dir, 'gamma_comparison.png'), dpi=150)
+    print("Saved comparison to gamma_comparison.png")
 
 
 if __name__ == "__main__":
@@ -155,7 +155,7 @@ if __name__ == "__main__":
     project_root = r"c:\Project\stone-detection-image-processing-only"
 
     raw_file = os.path.join(
-        project_root, "data", "raw", "PUT_HERE_FILENNAME_FROM_RAW_DATASET"
+        project_root, "data", "raw", "1-3-46-670589-33-1-63709079072689291800001-4862263206834957747_png_jpg.rf.cd218d4ed600ad3b24e4af71077096bd.jpg"
     )
 
     processed_dir = os.path.join(project_root, "data", "processed")
