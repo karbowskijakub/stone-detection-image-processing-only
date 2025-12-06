@@ -33,6 +33,10 @@ var/
 pip-log.txt
 pip-delete-this-directory.txt
 
+#dont keep dataset
+data/raw/*
+data/processed/*
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
